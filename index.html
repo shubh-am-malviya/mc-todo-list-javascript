@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="inputBox">
+				<input id="inputBoxTodo" type="text" placeholder="Add Todo here" />
+				<span class="cross-add-todo" onclick="emptyTodoInput()">X</span>
+			</div>
+
+			<button onclick="addTodo()">Add Todo</button>
+
+			<div>
+				<ul
+					id="todoListContainer"
+					class="todoList"
+					onclick="handleClick(event)"
+					ondblclick="handleEnableEdit(event)"
+				>
+					<!-- <li>
+						<div class="inputBox">
+							<input type="text" />
+							<span class="crossIcon">X</span>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+			<div id="no-todo-message-box">
+				<p>No todos to show.</p>
+			</div>
+		</div>
+	</body>
+	<script src="./Todo.js"></script>
+	<script src="./index.js"></script>
+</html>

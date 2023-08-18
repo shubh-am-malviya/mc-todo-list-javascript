@@ -1,0 +1,48 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox {
+    border: 1px solid black;
+    position: relative;
+    padding: 10px;
+}
+
+.inputBox > input {
+    border: none;
+}
+
+.inputBox > input:focus-visible {
+    outline: none;
+}
+
+.cross-add-todo {
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.todoList .crossIcon {
+    position: absolute;
+    right: -20px;
+    cursor: pointer;
+}
+
+.todoList > li {
+    margin-bottom: 20px;
+}
+
+.hide-no-todo-message {
+    display: none;
+}
